@@ -4,15 +4,9 @@
 
 @model BookListViewModel
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Here is a display of the Bookstore database.</p>
-</div>
-
-
 @foreach (var x in Model.Books)
 {
-<<<<<<< HEAD
+
     <div>
         <h3>Title: @x.Title</h3>
         <p>Author: @x.Author</p>
@@ -26,15 +20,5 @@
 <div page-model="@Model.PagingInfo" page-action="Index">
  
 </div>
-=======
-<div>
-    <h3>Title: @x.Title</h3>
-    <p>Author: @x.Author</p>
-    <p>Category: @x.Category</p>
-    <p>Price: @x.Price</p>
-    <p>Publisher: @x.Publisher</p>
-    <p>ISBN: @x.ISBN</p>
 
-</div>
-}
->>>>>>> c2f5a9a605575791eaf06e0f764297629309ba01
+
