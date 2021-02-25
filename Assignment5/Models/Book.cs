@@ -21,6 +21,8 @@ namespace Assignment5.Models
         [Required]
         public string Publisher { get; set; }
 
+        [StringLength(15,MinimumLength = 15)]
+        [RegularExpression(@"^(97(8|9))?\d{9}(\d|X)$")]
         [Required]
         public string ISBN { get; set; }
 
