@@ -7,15 +7,19 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Here is a display of the Bookstore database.</p>
 </div>
 
 
 @foreach (var x in Model)
 {
-    <div>
-        <h3>Title: @x.Title</h3>
-        <p>Author: @x.Author</p>
-        <p>Category: @x.Category</p>
-    </div>
+<div>
+    <h3>Title: @x.Title</h3>
+    <p>Author: @x.Author</p>
+    <p>Category: @x.Category</p>
+    <p>Price: @x.Price</p>
+    <p>Publisher: @x.Publisher</p>
+    <p>ISBN: @x.ISBN</p>
+
+</div>
 }
