@@ -17,6 +17,7 @@ namespace Assignment5.Migrations
                     Publisher = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ISBN = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
                     Category = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Classification = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Price = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     NumPages = table.Column<int>(type: "int", nullable: false)
                 },

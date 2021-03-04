@@ -9,5 +9,7 @@ namespace Assignment5.Models.ViewModels
 
         public PagingInfo PagingInfo { get; set; }
 
+        public string Category { get; set; }
+
     }
 }
