@@ -38,6 +38,9 @@ namespace Assignment5.Migrations
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)");
 
+                    b.Property<int>("NumPages")
+                        .HasColumnType("int");
+
                     b.Property<string>("Price")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

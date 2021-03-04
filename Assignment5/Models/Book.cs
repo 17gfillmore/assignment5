@@ -32,6 +32,8 @@ namespace Assignment5.Models
         [Required]
         public string Price { get; set; }
 
+        public int NumPages { get; set; }
+
 
     }
 }
