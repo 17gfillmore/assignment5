@@ -30,6 +30,9 @@ namespace Assignment5.Models
         public string Category { get; set; }
 
         [Required]
+        public string Classification { get; set; }
+
+        [Required]
         public string Price { get; set; }
 
         public int NumPages { get; set; }
