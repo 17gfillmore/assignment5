@@ -33,7 +33,7 @@ namespace Assignment5.Models
         public string Classification { get; set; }
 
         [Required]
-        public string Price { get; set; }
+        public double Price { get; set; }
 
         public int NumPages { get; set; }
 
