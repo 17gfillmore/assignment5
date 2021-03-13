@@ -8,7 +8,7 @@ namespace Assignment5.Models
     {
         public List<CartLine> Lines { get; set; } = new List<CartLine>();
 
-        public void AddItem (Book book, int qty)
+        public virtual void AddItem (Book book, int qty)
         {
             CartLine line = Lines
                 .Where(b => b.Book.BookId == book.BookId)
@@ -28,14 +28,14 @@ namespace Assignment5.Models
             }
         }
 
-        public void RemoveLine(Book book) =>
+        public virtual void RemoveLine(Book book) =>
             Lines.RemoveAll(x => x.Book.BookId == book.BookId);
 
-        public void Clear() => Lines.Clear();
+        public virtual void Clear() => Lines.Clear();
 
 
         // TODO: correct this computation of total sum
-        public decimal CalcTotalSum() => Lines.Sum(e => 25 * e.Quantity);
+        public decimal CalcTotalSum() => Lines.Sum(e => (decimal)e.Book.Price * e.Quantity);
 
 
         public class CartLine
